@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="./vue.js"></script>
+
+<div id="app">
+    <chupa-header></chupa-header>
+    <div class="container">
+        <div class="row">
+            <chupa-menu></chupa-menu>
+            <chupa-content></chupa-content>
+        </div>
+    </div>
+    <chupa-footer></chupa-footer>
+</div>
+
+<script>
+    Vue.component('chupa-header',{
+        template : '<div style="background-color:pink">header<br /><br /><br /><br /><br /><br /></div>'
+    })
+    Vue.component('chupa-menu', {
+        template : '<div class="col" style="background-color:skyblue">menu<br /><br /><br /><br /><br /><br /></div>'
+    })
+    Vue.component('chupa-content', {
+        template : '<div class="col" style="background-color:green">content<br /><br /><br /><br /><br /><br /></div>'
+    })
+    Vue.component('chupa-footer', {
+        template : '<div style="background-color:cyan">footer<br /><br /><br /><br /><br /><br /></div>'
+    })
+
+    new Vue({
+        el : "#app"
+    })
+</script>
+
+<style>
+.container{
+  max-width:100%;
+}
+</style>
