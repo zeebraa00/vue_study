@@ -1,4 +1,4 @@
-광복절 vue study with 건희
+Vue.js study with Jokuna
 -----------------------------------
 
 
